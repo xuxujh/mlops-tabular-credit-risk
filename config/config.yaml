@@ -1,0 +1,26 @@
+data:
+  n_samples: 1500
+  random_state: 42
+  test_size: 0.2
+
+features:
+  numeric:
+    - "age"
+    - "annual_income"
+    - "debt_to_income"
+    - "credit_score"
+    - "loan_amount"
+  categorical:
+    - "employment_status"
+    - "home_ownership"
+
+model:
+  artifact_path: "models/credit_risk_pipeline.joblib"
+  reference_stats_path: "models/reference_stats.json"
+  n_estimators: 120
+  max_depth: 5
+  learning_rate: 0.08
+  random_state: 42
+
+monitoring:
+  ks_alpha: 0.05
