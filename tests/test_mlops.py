@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from pathlib import Path
+
 from fastapi.testclient import TestClient
 
 from src.models.trainer import train_and_evaluate
